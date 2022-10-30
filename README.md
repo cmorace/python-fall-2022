@@ -28,11 +28,13 @@ git clone git@bitbucket.org:dwhite0/pycat.git
 
     a. Look at new pycat projects
 
-        - Asteroids
-        - GeoGuesser
-        - Animal Crossings
+    - Asteroids
 
-    b. Look at the most recent APCS problems
+    - GeoGuesser
+
+    - Animal Crossings
+
+    b. Look at the most recent APCS problems [https://yuihuang.com/apcs/](https://yuihuang.com/apcs/)
     
     c. Start working on individual projects
 
@@ -47,4 +49,4 @@ git clone git@bitbucket.org:dwhite0/pycat.git
         ```
 
     - download assets from a markdown source with Github pages
-       [asteriods.zip](https://github.com/cmorace/python-fall-2022/blob/main/asteriods.zip)
+       [asteriods.zip](https://github.com/cmorace/python-fall-2022/raw/main/asteriods.zip)
