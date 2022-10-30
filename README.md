@@ -47,4 +47,4 @@ git clone git@bitbucket.org:dwhite0/pycat.git
         ```
 
     - download assets from a markdown source with Github pages
-       [asteriods.zip](asteroids.zip)
+       [asteriods.zip](https://github.com/cmorace/python-fall-2022/blob/main/asteriods.zip)
