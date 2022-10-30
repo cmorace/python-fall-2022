@@ -1,5 +1,7 @@
 # python-fall-2022
 
+google meet link: [https://meet.google.com/zog-qgxm-dda](https://meet.google.com/zog-qgxm-dda)
+
 install and/or update pycat
 
 ```
@@ -24,8 +26,25 @@ git clone git@bitbucket.org:dwhite0/pycat.git
 
 2. Today's lesson
 
-    a. Look at new pycat project lessons
+    a. Look at new pycat projects
 
-    b. Look at most recent APCS problems
+        - Asteroids
+        - GeoGuesser
+        - Animal Crossings
+
+    b. Look at the most recent APCS problems
     
-    c. Work on individual projects
+    c. Start working on individual projects
+
+3. Tests
+
+    - pycat test
+
+        ``` python
+        from pycat.core import Window
+        w = Window()
+        w.run()
+        ```
+
+    - download assets from a markdown source with Github pages
+       [asteriods.zip](asteroids.zip)
