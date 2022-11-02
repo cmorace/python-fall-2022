@@ -2,7 +2,7 @@
 
 google meet link: [https://meet.google.com/zog-qgxm-dda](https://meet.google.com/zog-qgxm-dda)
 
-![time](time.png)
+![time](images/time.png)
 
 install and/or update pycat
 
@@ -18,13 +18,13 @@ git clone git@bitbucket.org:dwhite0/pycat.git
 
 --------
 
-## Lesson 1 2022-10-30
+## Lesson 1: 2022-10-30
 
 1. Discuss the future of our class
     
     a. Independent Project-Based (self-directed) vs. Planned Lesson (teacher-led)
     
-    b. Any more APCS practice/homework?
+    b. More APCS practice/homework?
     
     c. New directions? C/C++, Unity, Web Programming, 3D Graphics, Computer Vision, Machine Learning, Visualization, Operating Systems/Multi-threading/interprocess-communication, etc.
 
@@ -38,7 +38,7 @@ git clone git@bitbucket.org:dwhite0/pycat.git
 
     - Animal Crossings
     
-    c. Choose a project and start working on it
+    b. Choose a project and start working on it
 
 3. Tests
 
@@ -53,7 +53,7 @@ git clone git@bitbucket.org:dwhite0/pycat.git
     - download assets from a markdown source with Github pages
        [asteriods.zip](https://github.com/cmorace/python-fall-2022/raw/main/asteriods.zip)
 
-### Lesson 1 Group Discussion
+### Discussion
 
 1. Start with planned lessons
     
@@ -86,3 +86,25 @@ git clone git@bitbucket.org:dwhite0/pycat.git
     e. Research what python functions can send/receive data between multiple processes?
 
 ----
+
+## Lesson 1: 2022-10-30
+
+### A mini Unix Shell lesson
+
+create a file with `touch`
+
+delete a file with `rm`
+
+create a directory with `mkdir`
+
+navigate the filesystem with `cd`
+
+print the working directory with `pwd`
+
+show the contents of a file with `cat`, `head`, and `tail`
+
+show the contents of a directory with `ls`
+
+how to use `help` and `man`
+
+# A mini C lesson
