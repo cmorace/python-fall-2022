@@ -2,6 +2,7 @@ from pycat.core import Window, Sprite, Color
 
 w = Window(enforce_window_limits=False)
 
+
 class Ship(Sprite):
     DR = 2
     DS = 0.15
