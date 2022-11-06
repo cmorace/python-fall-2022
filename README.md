@@ -87,7 +87,30 @@ git clone git@bitbucket.org:dwhite0/pycat.git
 
 ----
 
-## Lesson 1: 2022-10-30
+## Lesson 2: 2022-11-06
+
+### APCS questions
+
+My solutions are in the repository. I recommend trying your best to solve them on your own before looking. Note: the solution to question 4 exceeds the time limit for most test cases on ZeroJudge.
+
+### Getting Started with Linux
+
+Linux is an open-source operating system. There are many distributions to choose from, e.g. Ubuntu, Debian, Red Hat, ArchLinux, CentOS, etc.
+
+There are a few different options for running Linux distributions.
+
+1. Install a new operating system on your pc. This is risky and time-consuming. If anything goes wrong, you might have to re-install. Don't do this unless you have a lot of experience debugging installation and hardware problems with Linux.
+
+2. Dual-boot: Partition your hard drive and install Linux on one of the partitions. One partition runs your current O.S. and the other runs a Linux distribution. Also time-consuming. Less risky than option 1, but still risky and requires some experience with Linux and partitioning
+
+3. Use a virtual machine. We have done this in the past with the APCS environment. This is a very safe option but requires some knowledge of the virtualization software e.g. VirtualBox. Performance is limited.
+
+4. Use a development container with Docker. This is probably the safest and easiest method but only have access to a shell environment. There is no GUI. Performance is usually better than running a virtual machine. Containers make it very easy to quickly set up, test, and deploy different development environments but require some knowledge of Docker.
+
+#### Setting up Docker and Dev-Containers
+
+1. Install [Docker](https://docs.docker.com/get-docker/)
+2. Install the [Dev-Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ### A mini Unix Shell lesson
 
@@ -105,6 +128,8 @@ show the contents of a file with `cat`, `head`, and `tail`
 
 show the contents of a directory with `ls`
 
-how to use `help` and `man`
+how to use `help`
 
-# A mini C lesson
+## A mini C lesson
+
+Reference: [The C Programming Lanugage](https://neilklingensmith.com/teaching/loyola/cs264-s2020/readings/cbook.pdf)
