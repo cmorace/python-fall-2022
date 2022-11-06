@@ -6,7 +6,7 @@ w = Window()
 class Button(Sprite):
     def on_create(self):
         self.width = 100
-        self.heigh = 100
+        self.height = 100
         self.position = w.center
 
     def on_left_click(self):

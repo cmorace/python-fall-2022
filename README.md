@@ -1,6 +1,6 @@
 # python-fall-2022
 
-google meet link: [https://meet.google.com/zog-qgxm-dda](https://meet.google.com/zog-qgxm-dda)
+google meet link: [https://meet.google.com/oyh-zgqx-oir](https://meet.google.com/oyh-zgqx-oir)
 
 ![time](images/time.png)
 
@@ -145,39 +145,42 @@ gcc --version
 #### Server
 
 ``` python
-#!/usr/bin/python           # This is server.py file
+import socket
+HOST = '127.0.0.1'
+PORT = 8000
 
-import socket               # Import socket module
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.bind((HOST, PORT))
+server.listen(10)
 
-s = socket.socket()         # Create a socket object
-host = socket.gethostname() # Get local machine name
-port = 12345                # Reserve a port for your service.
-s.bind((host, port))        # Bind to the port
-
-s.listen()                 # Now wait for client connection.
 while True:
-   c, addr = s.accept()     # Establish connection with client.
-   print(c.recv(1024).decode())
-   # print('Got connection from', addr)
-   # c.send('Thank you for connecting'.encode())
-   c.close()                # Close the connection
+    conn, addr = server.accept()
+    clientMessage = str(conn.recv(1024), encoding='utf-8')
+
+    print('Client message is:', clientMessage)
+
+    serverMessage = 'I\'m here!'
+    conn.sendall(serverMessage.encode())
+    conn.close()
 ```
 
 #### Client
 
 ``` python
-#!/usr/bin/python           # This is client.py file
+import socket
 
-import sys
-import socket               # Import socket module
+HOST = '127.0.0.1'
+PORT = 8000
+clientMessage = 'Hello!'
 
-s = socket.socket()         # Create a socket object
-host = socket.gethostname() # Get local machine name
-port = 12345                # Reserve a port for your service.
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client.connect((HOST, PORT))
 
-while True:
-    s.connect((host, port))
-    s.send(('Message from client '+sys.argv[1]).encode())
-    # print(s.recv(1024).decode())
-    s.close()                     # Close the socket when done
+
+client.sendall(clientMessage.encode())
+
+serverMessage = str(client.recv(1024), encoding='utf-8')
+print('Server:', serverMessage)
+
+client.close()
 ```
