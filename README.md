@@ -22,6 +22,8 @@ Last week our environments for practicing Linux and C
 
 ## Mini Linux(Bash) Lesson
 
+
+
 ### The ~/.bashrc file
 
 Aliases
@@ -54,6 +56,39 @@ Write two functions in C
 Compile with `gcc`
 
 ## Python Lesson
+
+Client
+
+``` python
+import socket
+from pycat.core import Window, Sprite
+
+HOST = '127.0.0.1'
+PORT = 8000
+clientMessage = 'Hello!'
+
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client.connect((HOST, PORT))
+
+w = Window(200, 200)
+
+
+class Button(Sprite):
+
+    def on_create(self):
+        self.scale = 100
+        self.position = w.center
+
+    def on_left_click(self):
+        print("sending to server")
+        client.sendall(clientMessage.encode())
+        serverMessage = str(client.recv(1024), encoding='utf-8')
+        print('Server:', serverMessage)
+
+
+w.create_sprite(Button)
+w.run()
+```
 
 1. Make sure we can connect and send messages from client to server with pycat
 1. Introduce keywords `try`/`except`
