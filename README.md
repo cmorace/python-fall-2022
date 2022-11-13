@@ -4,18 +4,23 @@ google meet link: [https://meet.google.com/oyh-zgqx-oir](https://meet.google.com
 
 ![time](images/time.png)
 
+Note: 
 
+- on 11/27, we will have two classes
+- the next APCS exam is on 1/08. We still need to reschedule this class
 # 11-13-2022
 
-## Mini Linux(Bash) Lesson
+## Check-in
 
-Is docker-desktop still not working? I would like us to work in the same environment if possible.
+Is docker-desktop still not working? It would be nice to work in the same environment if possible.
 
-Last Week
+Last week our environments for practicing Linux and C
 
 - Teacher using macOS or Ubuntu with Docker
 - Feng-Jun using Ubuntu with WSL (Windows Subsystem for Linux)
-- Eric is using git-bash and downloaded MinGW for GCC (can look into WSL)
+- Eric is using git-bash and downloaded MinGW
+
+## Mini Linux(Bash) Lesson
 
 ### The ~/.bashrc file
 
@@ -35,22 +40,37 @@ export PATH="<bin directory>:$PATH"
 
 ## Mini C Lesson
 
-Reference: [The C Programming Language](https://neilklingensmith.com/teaching/loyola/cs264-s2020/readings/cbook.pdf)
-
 Check your C compiler
 
 ``` bash
 gcc --version
 ```
 
+Write two functions in C
+
+1. convert from degrees to radians
+1. convert from radians to degrees
+
+Compile with `gcc`
+
 ## Python Lesson
 
-Check last week's progress
+1. Make sure we can connect and send messages from client to server with pycat
+1. Introduce keywords `try`/`except`
+1. Decompose the two-player online game problem
 
-Design Server State Machine
+- Design a simplified Server state machine for two player game
+- Design a simplified Client state machine for two player game
 
-Design Client State Machine
+Can we design a reusable module for a two-player server-client model?
 
+## Homework
+
+- Brainstorm ideas for your final project. The more ideas, the better.
+- Continue work on the two-player asteroid game.
+- Study python reference material for [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) and [socket](https://docs.python.org/3/library/socket.html)
+- Work on previous exam's APCS problems.
+- Study and test some code from [The C Programming Language](https://neilklingensmith.com/teaching/loyola/cs264-s2020/readings/cbook.pdf) book 
 
 ---------
 
