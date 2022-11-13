@@ -131,7 +131,7 @@ Can we design a reusable module for a two-player server-client model?
 - Continue work on the two-player asteroid game.
 - Study python reference material for [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) and [socket](https://docs.python.org/3/library/socket.html)
 - Work on previous exam's APCS problems.
-- Study and test some code from [The C Programming Language](https://neilklingensmith.com/teaching/loyola/cs264-s2020/readings/cbook.pdf) book 
+- Study and test some code from [The C Programming Language](https://github.com/auspbro/ebook-c/raw/master/The.C.Programming.Language.2Nd.Ed%20Prentice.Hall.Brian.W.Kernighan.and.Dennis.M.Ritchie..pdf) book 
 
 ---------
 
