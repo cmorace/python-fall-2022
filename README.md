@@ -23,8 +23,8 @@ Aliases
 
 ``` bash
 alias update-pycat="pip install git+https://bitbucket.org/dwhite0/pycat.git -U"
-alias python-class="<your absolute workspace path> code>"
-alias gcc="<path to gcc.exe>"
+alias python-class="code <your absolute workspace path>"
+alias gcc="<path to gcc.exe>" # for windows
 ```
 
 Export Path variable
