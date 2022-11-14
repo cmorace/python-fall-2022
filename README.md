@@ -31,6 +31,7 @@ Aliases
 ``` bash
 alias update-pycat="pip install git+https://bitbucket.org/dwhite0/pycat.git -U"
 alias python-class="code <your absolute workspace path>"
+alias bashrc="code ~/.bashrc"
 alias gcc="<path to gcc.exe>" # for windows
 ```
 
