@@ -20,7 +20,6 @@ while True:
     except ConnectionResetError:
         print("lost connection")
         conn.close()
-        # conn, addr = server.accept()  # wait until get a message
     except:
         print("got some other error")
         exit()

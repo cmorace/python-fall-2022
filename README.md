@@ -8,6 +8,17 @@ Note:
 
 - on 11/27, we will have two classes
 - the next APCS exam is on 1/08. We still need to reschedule this class
+
+# 11-20-2022
+
+Review `try/except` details.
+
+Set up two client windows and one server window and test.
+Design and implement a state machine for the server
+
+
+
+
 # 11-13-2022
 
 ## Check-in
