@@ -49,8 +49,8 @@ class Server:
             self.connections.remove((conn, addr))
             self.state = ServerState.WAITING
             print("Server lost a connection, waiting for reconnect")
-        except:
-            print("got some other error")
+        except Exception as e:
+            print(f"got some other error {e}")
             exit()
 
 
