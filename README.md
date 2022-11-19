@@ -9,19 +9,64 @@ Note:
 - on 11/27, we will have two classes
 - the next APCS exam is on 1/08. We still need to reschedule this class
 
-# 11-20-2022
+------------
 
-Review `try/except` details.
+## 11-20-2022
+### Python Lesson
 
-Set up two client windows and one server window and test.
-Design and implement a state machine for the server
+1. Set up two client windows and one server window and test.
+
+1. Review Reference [socket](https://docs.python.org/3/library/socket.html)
+
+   a. `socket.sendall()` vs. `socket.sendto()` vs. `socket.send()`
+   
+   b. `socket.accept()`
+
+1. Review `try/except` details. Reference: [errors](https://docs.python.org/3/tutorial/errors.html)
+
+1. Implement `try/except` in server.py
+
+1. Design and implement a state machine for the server.
+
+    a. Clean up the code. Make Server a class.
+
+1. Introduce multi-threading. Reference [threading](https://docs.python.org/3/library/threading.html)
+
+1. Implement multi-threading in server.py
+
+### C Lesson
+
+1. types, arrays, pointers, `sizeof`
+
+2. [memory allocation](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
+
+3. example of pass by value and pass by reference
+
+### Linux Lesson
+
+1. using the [apt](https://help.ubuntu.com/community/AptGet/Howto) package manager
+
+2. introduce [Bash scripting](https://linuxconfig.org/bash-scripting-tutorial)
+
+3. introduce [GNU make](https://linuxhint.com/gnu-make-tutorial/)
+
+#### Homework: Study 'The C Programming Language' and Read Linux References
+
+1. [Linux File System](https://www.tutorialspoint.com/unix/unix-file-system.htm)
+
+2. [Linux File Permissions](https://www.tutorialspoint.com/unix/unix-file-permissions.htm)
+
+3. [Linux File Commands](https://www.tutorialspoint.com/unix/unix-file-commands.htm)
+
+4. [Linux Directory Commands](https://www.tutorialspoint.com/unix/unix-directory-commands.htm)
 
 
 
+--------
 
-# 11-13-2022
+## 11-13-2022
 
-## Check-in
+### Check-in
 
 Is docker-desktop still not working? It would be nice to work in the same environment if possible.
 
@@ -31,11 +76,11 @@ Last week our environments for practicing Linux and C
 - Feng-Jun using Ubuntu with WSL (Windows Subsystem for Linux)
 - Eric is using git-bash and downloaded MinGW
 
-## Mini Linux(Bash) Lesson
+### Mini Linux(Bash) Lesson
 
 
 
-### The ~/.bashrc file
+#### The ~/.bashrc file
 
 Aliases
 
@@ -52,7 +97,7 @@ Export Path variable
 export PATH="<bin directory>:$PATH"
 ```
 
-## Mini C Lesson
+### Mini C Lesson
 
 Check your C compiler
 
@@ -67,7 +112,7 @@ Write two functions in C
 
 Compile with `gcc`
 
-## Python Lesson
+### Python Lesson
 
 Server
 
@@ -137,7 +182,7 @@ w.run()
 
 Can we design a reusable module for a two-player server-client model?
 
-## Homework
+### Homework
 
 - Brainstorm ideas for your final project. The more ideas, the better.
 - Continue work on the two-player asteroid game.
