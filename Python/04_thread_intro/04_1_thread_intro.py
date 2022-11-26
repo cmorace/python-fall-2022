@@ -7,7 +7,7 @@ def first_thread_func():
     for _ in range(100):
         first_thread_index += 1
         print(f"first_thread_index={first_thread_index}")
-        sleep(0.001)
+        sleep(0.01)
 
 
 def second_thread_func():
@@ -15,7 +15,7 @@ def second_thread_func():
     for _ in range(100):
         second_thread_index += 1
         print(f"second_thread_index={second_thread_index}")
-        sleep(0.001)
+        sleep(0.01)
 
 
 first_thread = Thread(target=first_thread_func)

@@ -11,6 +11,15 @@ Note:
 
 ------------
 
+## 11-27-2022
+Finish up last week's lesson
+
+- finish threaded server
+- introduce multiprocessing module
+- test out OpenCV, image loading, face detection
+- finish C and Linux lesson from last week
+
+- check out algoexpert.io
 ## 11-20-2022
 ### Python Lesson
 
@@ -40,7 +49,7 @@ Note:
 
 2. [memory allocation](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
 
-3. example of pass by value and pass by reference
+3. example of pass-by-value, pass-by-reference, and pass-by-pointer
 
 ### Linux Lesson
 
@@ -50,7 +59,7 @@ Note:
 
 3. introduce [GNU make](https://linuxhint.com/gnu-make-tutorial/)
 
-#### Homework: Study 'The C Programming Language' and Read Linux References
+#### Homework: Study 'The C Programming Language' book and review Linux references
 
 1. [Linux File System](https://www.tutorialspoint.com/unix/unix-file-system.htm)
 

@@ -20,7 +20,6 @@ while True:
     except ConnectionResetError:
         print("lost connection")
         conn.close()
-    except:
-        print("got some other error")
-        exit()
-        
+    except Exception as e:
+        print(f"got some other error {e}")
+        # exit()
