@@ -15,10 +15,9 @@ Note:
 Finish up last week's lesson
 
 - finish threaded server
-- introduce multiprocessing module
-- test out OpenCV, image loading, face detection
+- introduce [multiprocessing module](https://docs.python.org/3/library/multiprocessing.html)
+- test out [OpenCV](https://docs.opencv.org/4.x/dc/d4d/tutorial_py_table_of_contents_gui.html), [image loading](https://docs.opencv.org/4.x/db/deb/tutorial_display_image.html), [face detection](https://docs.opencv.org/4.x/db/d28/tutorial_cascade_classifier.html)
 - finish C and Linux lesson from last week
-
 - check out algoexpert.io
 ## 11-20-2022
 ### Python Lesson
