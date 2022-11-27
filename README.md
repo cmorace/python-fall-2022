@@ -12,9 +12,19 @@ Note:
 ------------
 
 ## 11-27-2022
-Finish up last week's lesson
+### Review:
+- `try/except`, `Exceptions`
+- sockets
+    - `conn, addr = socket.accept()`
+    - `conn.sendto(sent_message.encode(), addr)`
+    - `received_message = str(conn.recv(1024), encoding='utf-8')`
+    - `conn.close()`
+- threads
+    - `thread = Thread(target=foo, args=(a,b,))`
+    - `thread.start()`
 
-- finish threaded server
+### Python
+- implement a multi-threaded server
 - introduce [multiprocessing module](https://docs.python.org/3/library/multiprocessing.html)
 - test out [OpenCV](https://docs.opencv.org/4.x/dc/d4d/tutorial_py_table_of_contents_gui.html), [image loading](https://docs.opencv.org/4.x/db/deb/tutorial_display_image.html), [face detection](https://docs.opencv.org/4.x/db/d28/tutorial_cascade_classifier.html)
 - finish C and Linux lesson from last week
