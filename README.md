@@ -25,6 +25,37 @@ Note:
 
 ### Python
 - implement a multi-threaded server
+    ``` text
+    Main Thread
+    ------------
+    set is_waiting_for_connection = False
+    while True
+        if not is_waiting_for_connection:
+            start thread to receive a connection
+        for each connection
+            if connection is not waiting for message
+                start a new receiving thread
+
+    Receive Connection Thread
+    ---------------------------
+    set is_waiting_for_connection = True
+    when receive new connection:
+        add connection to list of connections
+        send back acknowledgment to cliet
+        set is_waiting_for_connection = False 
+
+    Receive Message Thread (every connection has a seperate thread)
+    -------------------------
+    set connection_is_waiting = True
+    try to get a new message
+        receive message
+        set connection_is_waiting = False
+        send acknowledgement back to client
+    except error close connection
+        close connection
+        remove connection from list of connections
+
+    ```
 - introduce [multiprocessing module](https://docs.python.org/3/library/multiprocessing.html)
 - test out [OpenCV](https://docs.opencv.org/4.x/dc/d4d/tutorial_py_table_of_contents_gui.html), [image loading](https://docs.opencv.org/4.x/db/deb/tutorial_display_image.html), [face detection](https://docs.opencv.org/4.x/db/d28/tutorial_cascade_classifier.html)
 - finish C and Linux lesson from last week

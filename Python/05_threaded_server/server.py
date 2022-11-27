@@ -1,14 +1,12 @@
 import socket
-from enum import Enum, auto
 from threading import Thread
 
-
+socket.socket
 class Connection:
     def __init__(self, socket: socket.socket, addr: any):
         self.socket = socket
         self.address = addr
         self.is_waiting_for_message = False
-
 
 class Server:
     HOST = '127.0.0.1'
@@ -22,6 +20,7 @@ class Server:
         print("Server started, waiting for connection")
         self.is_waiting_for_connection = False
         while True:
+            print("server")
             for c in self.connections:
                 if not c.is_waiting_for_message:
                     print("[NEW THREAD] wait_for_new_message")
@@ -34,7 +33,7 @@ class Server:
                 t = Thread(target=self.wait_for_new_connection)
                 t.start()
 
-    def wait_for_new_connection(self) -> tuple[socket.socket, any]:
+    def wait_for_new_connection(self):
         conn, addr = self.socket.accept()  # waits until get connection request
         self.is_waiting_for_connection = False
         server_message = 'You connected to the server!'
