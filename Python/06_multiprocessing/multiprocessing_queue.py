@@ -10,6 +10,7 @@ def foo(q):
 
 
 if __name__ == '__main__':
+    print(mp.cpu_count())
     mp.set_start_method('spawn')
     q = mp.Queue()
     p1 = mp.Process(target=foo, args=(q,))
