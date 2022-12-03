@@ -1,6 +1,7 @@
 # python-fall-2022
 
-google meet link: [https://meet.google.com/oyh-zgqx-oir](https://meet.google.com/oyh-zgqx-oir)
+<!-- google meet link: [https://meet.google.com/oyh-zgqx-oir](https://meet.google.com/oyh-zgqx-oir) -->
+google meet link: [https://meet.google.com/gas-hhcc-fki](https://meet.google.com/gas-hhcc-fki)
 
 ![time](images/time.png)
 
@@ -54,11 +55,19 @@ for (x, y, w, h) in cats:
 
 Download the cascade classifier XML file from [here](https://github.com/opencv/opencv/blob/4.x/data/haarcascades/haarcascade_frontalcatface_extended.xml)
 
-Exercise:
-    View and save the image showing the detected cat's face. If faces are not detected, "tune" the parameters for scaleFactor and minNeighbors.
+### Exercise:
 
-Extension:
-    Download other cascade classifiers from [here](https://github.com/opencv/opencv/tree/4.x/data/haarcascades) and detect other objects in the image.
+View and save the image showing the detected cat's face. If faces are not detected, tune the parameters for scaleFactor and minNeighbors.
+
+### Extension:
+
+Download other cascade classifiers from [here](https://github.com/opencv/opencv/tree/4.x/data/haarcascades) and detect other objects in an image.
+
+### Additional Resources
+
+- [Learn OpenCV](https://www.learnopencv.com/)
+
+- [https://github.com/spmallick/learnopencv](https://github.com/spmallick/learnopencv)
 
 ---------------------
 ## 11-27-2022
