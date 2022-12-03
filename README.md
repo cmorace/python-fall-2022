@@ -7,7 +7,6 @@ google meet link: [https://meet.google.com/gas-hhcc-fki](https://meet.google.com
 
 Note: 
 
-- on 11/27, we will have two classes
 - the next APCS exam is on 1/08. We still need to reschedule this class
 
 ------------
