@@ -10,7 +10,57 @@ Note:
 - the next APCS exam is on 1/08. We still need to reschedule this class
 
 ------------
+## 12-04-2022
 
+### Intro to OpenCV
+
+![](images/saved_cv_image1.png)
+
+Example 0. Check OpenCV version
+
+```python
+import cv2 as cv
+print("OpenCV version:", cv.__version__)
+```
+
+Example 1. Load, Save, and View an Image
+
+```python
+import cv2 as cv
+import sys
+img = cv.imread("images/baboon.bmp")
+if img is None:
+    sys.exit("Could not read the image.")
+cv.imshow("Display window", img)
+k = cv.waitKey(0)
+if k == ord("s"):
+    cv.imwrite("saved_cv_image.png", img)
+```
+
+Example 2. Detect a cat's face in an image
+
+```python
+import cv2 as cv
+print("OpenCV version:", cv.__version__)
+cascade = cv.CascadeClassifier('cat_face_extended.xml')
+img = cv.imread("01_cat.webp")
+img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+cats = cascade.detectMultiScale(img_gray, scaleFactor=1.05, minNeighbors=4)
+print(len(cats), "cat faces detected")
+for (x, y, w, h) in cats:
+    cv.rectangle(img, pt1=(x, y), pt2=(x+w, y+h),
+                 color=(255, 255, 0), thickness=2)
+```
+
+Download the cascade classifier XML file from [here](https://github.com/opencv/opencv/blob/4.x/data/haarcascades/haarcascade_frontalcatface_extended.xml)
+
+Exercise:
+    View and save the image showing the detected cat's face. If faces are not detected, "tune" the parameters for scaleFactor and minNeighbors.
+
+Extension:
+    Download other cascade classifiers from [here](https://github.com/opencv/opencv/tree/4.x/data/haarcascades) and detect other objects in the image.
+
+---------------------
 ## 11-27-2022
 ### Review:
 - `try/except`, `Exceptions`
