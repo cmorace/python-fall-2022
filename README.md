@@ -1,7 +1,7 @@
 # python-fall-2022
 
 <!-- google meet link: [https://meet.google.com/oyh-zgqx-oir](https://meet.google.com/oyh-zgqx-oir) -->
-google meet link: [https://meet.google.com/gas-hhcc-fki](https://meet.google.com/gas-hhcc-fki)
+google meet link: [https://meet.google.com/umh-pgbg-mny](https://meet.google.com/umh-pgbg-mny)
 
 ![time](images/time.png)
 
