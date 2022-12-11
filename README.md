@@ -12,6 +12,13 @@ Note:
 ------------
 ## 12-11-2022
 Design and start implementing final projects
+
+A separate repository for final project notes is here:
+[https://github.com/cmorace/PeanutsPythonFinalProject](https://github.com/cmorace/PeanutsPythonFinalProject)
+
+Eric: [CandyCats Repository](https://github.com/duck003/CandyCats.git)
+
+Feng-Jun: [MailModel Repository](https://github.com/NopeIdontthinkso/MailModel)
 ## 12-04-2022
 
 ### Intro to OpenCV
