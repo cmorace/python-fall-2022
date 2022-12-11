@@ -10,6 +10,8 @@ Note:
 - the next APCS exam is on 1/08. We still need to reschedule this class
 
 ------------
+## 12-11-2022
+Design and start implementing final projects
 ## 12-04-2022
 
 ### Intro to OpenCV
