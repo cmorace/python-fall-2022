@@ -8,6 +8,7 @@ class MySprite(Sprite):
 
     class State(Enum):
         JUMPING = auto()
+        FALLING = auto()
         WALKING = auto()
 
     def on_create(self):
@@ -19,14 +20,17 @@ class MySprite(Sprite):
         self.state = MySprite.State.JUMPING
 
     def on_update(self, dt):
-        if self.state == MySprite.State.JUMPING:
-            pass
+        if self.state is MySprite.State.JUMPING:
+            if self.y_speed <= 0:
+                self.state = MySprite.State.FALLING
+        if self.state is MySprite.State.FALLING:
             if self.is_touching_ground():
                 self.state = MySprite.State.WALKING
-        elif self.state == MySprite.State.WALKING:
-            pass
+        elif self.state is MySprite.State.WALKING:
             if w.is_key_down(" "):
                 self.state = MySprite.State.JUMPING
+            elif not self.is_touching_ground():
+                self.state = MySprite.State.FALLING
 
     def is_touching_ground(self):
         return False
