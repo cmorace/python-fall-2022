@@ -7,9 +7,17 @@ google meet link: [https://meet.google.com/umh-pgbg-mny](https://meet.google.com
 
 Note: 
 
-- the next APCS exam is on 1/08. We still need to reschedule this class
+- the next APCS exam is on 1/08. The class has been rescheduled for 12/25 from 13:30-15:30. 
 
 ------------
+## 12-18-2022
+
+Continue working on Final Projects
+
+JSON example [here](https://github.com/cmorace/python-fall-2022/blob/main/Python/json_example/test.py)
+
+Platformer state machine example [here](https://github.com/cmorace/python-fall-2022/blob/main/Python/state_machine_example/test.py)
+
 ## 12-11-2022
 Design and start implementing final projects
 
