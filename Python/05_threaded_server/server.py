@@ -1,12 +1,13 @@
 import socket
 from threading import Thread
 
-socket.socket
+
 class Connection:
     def __init__(self, socket: socket.socket, addr: any):
         self.socket = socket
         self.address = addr
         self.is_waiting_for_message = False
+
 
 class Server:
     HOST = '127.0.0.1'
